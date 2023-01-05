@@ -1,9 +1,24 @@
 const app = Vue.createApp({
   data() {
     return {
-      title:
-        "The Legend of King Arthur: The Sword in the Stone and the Lady of the Lake",
-      author: "T. H. White",
+      books: [
+        {
+          title: "The Legend of King Arthur",
+          author: "King Arthur",
+        },
+        {
+          title: "The Legend of Achilles and the Trojan War",
+          author: "Homer",
+        },
+        {
+          title: "Avatar the way of water",
+          author: "James Cameron",
+        },
+        {
+          title: "Avatar the Last Airbender",
+          author: "Aang and Fire Lord Ursa",
+        },
+      ],
       age: 90,
       showBook: true,
       x: 0,

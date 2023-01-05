@@ -22,7 +22,11 @@
     <h1>Hello Vue3! 👋</h1>
     <div id="app">
       <div v-if="showBook">
-        <p>{{title}} - {{author}} - {{age}}</p>
+        <ul>
+            <li v-for="item in books">
+                <h3>{{item.title}}</h3> <p>{{item.author}}</p>
+            </li>
+        </ul>
         <br />
         <button
           @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')"
