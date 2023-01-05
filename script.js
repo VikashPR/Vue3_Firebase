@@ -19,6 +19,7 @@ const app = Vue.createApp({
           author: "Aang and Fire Lord Ursa",
         },
       ],
+      url: "https://VikashPR.com",
       age: 90,
       showBook: true,
       x: 0,
