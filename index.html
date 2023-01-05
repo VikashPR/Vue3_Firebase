@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue3_Firebase</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Hello Vue3! 👋</h1>
     <div id="app">
+      <div v-if="showBook">
         <p>{{title}} - {{author}} - {{age}}</p>
-        <button @click="age++">Become Old</button>
-        <button v-on:click="age--">Become Young</button>
-        <br>
-        <button @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')">Update
-            Book Title</button>
+        <br />
+        <button
+          @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')"
+        >
+          Update Book Title
+        </button>
+        <button @click="toggleBooks">Hide Books</button>
+      </div>
+
+      <div v-else>
+        <button @click="toggleBooks">ShowBook</button>
+      </div>
+
+      <div v-show="showBook">
+        Currently Showing Books
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
