@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue3_Firebase</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      .box {
+        padding: 100px 0;
+        margin: 20px;
+        width: 400px;
+        background-color: rgb(18, 207, 103);
+        text-align: center;
+        display: inline-block;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,6 +39,15 @@
       <div v-show="showBook">
         Currently Showing Books
       </div>
+
+      <!-- Mouse Events -->
+      <br>
+      <br>
+
+      <div class="box" @mouseover="handleEvent($event, 5)">Mouseover (enter)</div>
+      <div class="box" @mouseleave="handleEvent">Mouseleave</div>
+      <div class="box" @dblclick="handleEvent">double click</div>
+      <div class="box">Special</div>
     </div>
     <script src="./script.js"></script>
   </body>
