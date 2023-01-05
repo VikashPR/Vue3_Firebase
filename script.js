@@ -1,8 +1,12 @@
 const app = Vue.createApp({
-  template: `
-    <div>
-    <h1>Meow cat, Pink cat!</h1>
-    </div>`,
+  data() {
+    return {
+      title:
+        "The Legend of King Arthur: The Sword in the Stone and the Lady of the Lake",
+      author: "T. H. White",
+      age: 90,
+    };
+  },
 });
 
 app.mount("#app");
