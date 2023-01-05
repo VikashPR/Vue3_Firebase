@@ -6,6 +6,8 @@ const app = Vue.createApp({
       author: "T. H. White",
       age: 90,
       showBook: true,
+      x: 0,
+      y: 0,
     };
   },
   methods: {
@@ -20,7 +22,11 @@ const app = Vue.createApp({
       if (data) {
         console.log(data);
       }
-    },
+      },
+      handleMouseMove(e) {
+          this.x = e.offsetX;
+          this.y = e.offsetY;
+    }
   },
 });
 

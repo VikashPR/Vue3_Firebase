@@ -47,7 +47,7 @@
       <div class="box" @mouseover="handleEvent($event, 5)">Mouseover (enter)</div>
       <div class="box" @mouseleave="handleEvent">Mouseleave</div>
       <div class="box" @dblclick="handleEvent">double click</div>
-      <div class="box">Special</div>
+      <div class="box" @mousemove="handleMouseMove">Position - {{x}}  {{y}}</div>
     </div>
     <script src="./script.js"></script>
   </body>
