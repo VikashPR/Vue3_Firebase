@@ -1,7 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
-      books: [
+      films: [
         {
           title: "The Legend of King Arthur",
           author: "King Arthur",
@@ -21,28 +21,28 @@ const app = Vue.createApp({
       ],
       url: "https://VikashPR.com",
       age: 90,
-      showBook: true,
+      showfilm: true,
       x: 0,
       y: 0,
     };
   },
   methods: {
     updateTitle(title) {
-      this.title = title;
+      this.films[0].title = title;
     },
-    toggleBooks() {
-      this.showBook = !this.showBook;
+    togglefilms() {
+      this.showfilm = !this.showfilm;
     },
     handleEvent(e, data) {
       console.log(e, e.type);
       if (data) {
         console.log(data);
       }
-      },
-      handleMouseMove(e) {
-          this.x = e.offsetX;
-          this.y = e.offsetY;
-    }
+    },
+    handleMouseMove(e) {
+      this.x = e.offsetX;
+      this.y = e.offsetY;
+    },
   },
 });
 

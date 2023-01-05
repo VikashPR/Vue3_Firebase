@@ -23,9 +23,9 @@
     <h1>Hello Vue3! 👋</h1>
     <div id="app">
         <a :href="url">Best Website in the world ⚓️</a>
-        <div v-if="showBook">
+        <div v-if="showfilm">
             <ul>
-                <li v-for="item in books">
+                <li v-for="item in films">
                     <h3>{{item.title}}</h3>
                     <p>{{item.author}}</p>
                     </li>
@@ -33,17 +33,17 @@
                     <br />
                     <button
                 @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')">
-                Update Book Title
+                Update film Title
             </button>
-            <button @click="toggleBooks">Hide Books</button>
+            <button @click="togglefilms">Hide films</button>
         </div>
 
         <div v-else>
-            <button @click="toggleBooks">ShowBook</button>
+            <button @click="togglefilms">Showfilm</button>
         </div>
 
-        <div v-show="showBook">
-            Currently Showing Books
+        <div v-show="showfilm">
+            Currently Showing films
         </div>
 
         <!-- Mouse Events -->
