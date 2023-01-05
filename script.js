@@ -5,22 +5,27 @@ const app = Vue.createApp({
         {
           title: "The Legend of King Arthur",
           author: "Queen Arthur",
+          img: "./assets/1.png",
         },
         {
           title: "The Legend of Achilles and the Trojan War",
           author: "Homer",
+          img: "./assets/2.jpeg",
         },
         {
           title: "Avatar the way of water",
           author: "James Cameron",
+          img: "./assets/3.webp",
         },
         {
           title: "Avatar the Last Airbender",
           author: "Aang and Fire Lord Ursa",
+          img: "./assets/4.jpg",
         },
         {
           title: "Leonidas and the brave 300",
           author: "Leonidas",
+          img: "./assets/5.webp",
         },
       ],
       url: "https://VikashPR.com",
