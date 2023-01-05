@@ -1,10 +1,10 @@
 const app = Vue.createApp({
   data() {
     return {
-      films: [
+      legends: [
         {
           title: "The Legend of King Arthur",
-          author: "King Arthur",
+          author: "Queen Arthur",
         },
         {
           title: "The Legend of Achilles and the Trojan War",
@@ -18,20 +18,24 @@ const app = Vue.createApp({
           title: "Avatar the Last Airbender",
           author: "Aang and Fire Lord Ursa",
         },
+        {
+          title: "Leonidas and the brave 300",
+          author: "Leonidas",
+        },
       ],
       url: "https://VikashPR.com",
       age: 90,
-      showfilm: true,
+      showlegends: true,
       x: 0,
       y: 0,
     };
   },
   methods: {
     updateTitle(title) {
-      this.films[0].title = title;
+      this.legends[0].title = title;
     },
-    togglefilms() {
-      this.showfilm = !this.showfilm;
+    togglelegends() {
+      this.showlegends = !this.showlegends;
     },
     handleEvent(e, data) {
       console.log(e, e.type);
