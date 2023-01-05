@@ -7,6 +7,11 @@ const app = Vue.createApp({
       age: 90,
     };
   },
+  methods: {
+    updateTitle(title) {
+      this.title = title;
+    },
+  },
 });
 
 app.mount("#app");

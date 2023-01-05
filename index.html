@@ -13,6 +13,11 @@
     <h1>Hello Vue3! 👋</h1>
     <div id="app">
         <p>{{title}} - {{author}} - {{age}}</p>
+        <button @click="age++">Become Old</button>
+        <button v-on:click="age--">Become Young</button>
+        <br>
+        <button @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')">Update
+            Book Title</button>
     </div>
     <script src="./script.js"></script>
 </body>
