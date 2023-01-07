@@ -9,30 +9,37 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        body{
+
+        body {
             background-color: #eee;
             font-family: 'Rubik', sans-serif;
-            max-width:960px;
-            margin:20px auto;
+            max-width: 960px;
+            margin: 20px auto;
         }
-         p,h3,ul{
-            margin:0;
-            padding:0;
+
+        p,
+        h3,
+        ul {
+            margin: 0;
+            padding: 0;
         }
-        li{
-            list-style-type:none;
+
+        li {
+            list-style-type: none;
             background: #fff;
-            margin:20px;
-            border-radius:10px;
-            display:flex;
-            align-items:center;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
             justify-content: space-between;
-            padding:10px 20px;
+            padding: 10px 20px;
         }
-        li.fav{
+
+        li.fav {
             background: #ff9ed2;
-            color:#fff;
+            color: #fff;
         }
+
         /* .box {
             padding: 100px 0;
             margin: 20px;
@@ -55,10 +62,10 @@
                     <img style="max-width: 400px;" :src=item.img alt="">
                     <h3>{{item.title}}</h3>
                     <p>{{item.author}}</p>
-                    </li>
-                    </ul>
-                    <br />
-                    <button
+                </li>
+                </ul>
+                <br />
+                <button
                 @click="updateTitle('The Legend of King Arthur: The Sword in the Stone and the Lady of the London')">
                 Update legend Title
             </button>
