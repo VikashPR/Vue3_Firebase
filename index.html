@@ -8,15 +8,13 @@
     <title>Vue3_Firebase</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
-        .box {
-            padding: 100px 0;
-            margin: 20px;
-            width: 400px;
-            background-color: rgb(18, 207, 103);
-            text-align: center;
-            display: inline-block;
+        body{
+            background-color: #eee;
+            max-width:960px;
+            margin:20px auto;
         }
     </style>
+
 </head>
 
 <body>
@@ -25,7 +23,7 @@
         <a :href="url">Best Website in the world ⚓️</a>
         <div v-if="showlegends">
             <ul>
-                <li v-for="item in legends">
+                <li v-for="item in legends" :class="{fav: item.isFav}">
                     <img style="max-width: 400px;" :src=item.img alt="">
                     <h3>{{item.title}}</h3>
                     <p>{{item.author}}</p>
