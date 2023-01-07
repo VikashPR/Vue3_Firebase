@@ -47,6 +47,9 @@ const app = Vue.createApp({
     togglelegends() {
       this.showlegends = !this.showlegends;
     },
+    handleFav(item) {
+      item.isFav = !item.isFav;
+    },
     // handleEvent(e, data) {
     //   console.log(e, e.type);
     //   if (data) {
