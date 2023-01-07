@@ -13,6 +13,27 @@
             max-width:960px;
             margin:20px auto;
         }
+         p,h3,ul{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style-type:none;
+            background: #fff;
+            margin:20px;
+            border-radius:10px;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        /* .box {
+            padding: 100px 0;
+            margin: 20px;
+            width: 400px;
+            background-color: rgb(18, 207, 103);
+            text-align: center;
+            display: inline-block;
+        } */
     </style>
 
 </head>
@@ -46,13 +67,11 @@
         </div>
 
         <!-- Mouse Events -->
-        <br>
-        <br>
-
+        <!-- <br><br>
         <div class="box" @mouseover="handleEvent($event, 5)">Mouseover (enter)</div>
         <div class="box" @mouseleave="handleEvent">Mouseleave</div>
         <div class="box" @dblclick="handleEvent">double click</div>
-        <div class="box" @mousemove="handleMouseMove">Position - {{x}} {{y}}</div>
+        <div class="box" @mousemove="handleMouseMove">Position - {{x}} {{y}}</div> -->
     </div>
     <script src="./script.js"></script>
 </body>
