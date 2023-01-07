@@ -47,16 +47,16 @@ const app = Vue.createApp({
     togglelegends() {
       this.showlegends = !this.showlegends;
     },
-    handleEvent(e, data) {
-      console.log(e, e.type);
-      if (data) {
-        console.log(data);
-      }
-    },
-    handleMouseMove(e) {
-      this.x = e.offsetX;
-      this.y = e.offsetY;
-    },
+    // handleEvent(e, data) {
+    //   console.log(e, e.type);
+    //   if (data) {
+    //     console.log(data);
+    //   }
+    // },
+    // handleMouseMove(e) {
+    //   this.x = e.offsetX;
+    //   this.y = e.offsetY;
+    // },
   },
 });
 
