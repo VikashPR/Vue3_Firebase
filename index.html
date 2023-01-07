@@ -58,7 +58,7 @@
         <a :href="url">Best Website in the world ⚓️</a>
         <div v-if="showlegends">
             <ul>
-                <li v-for="item in legends" @click="handleFav(item)" :class="{fav: item.isFav}">
+                <li v-for="item in legends" @click="toggleIsFav(item)" :class="{fav: item.isFav}">
                     <img style="max-width: 400px;" :src=item.img alt="">
                     <h3>{{item.title}}</h3>
                     <p>{{item.author}}</p>
