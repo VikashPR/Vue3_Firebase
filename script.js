@@ -61,6 +61,12 @@ const app = Vue.createApp({
     //   this.y = e.offsetY;
     // },
   },
+  // NOTE: When other data change computed property change
+  computed: {
+    filteredLegends() {
+      return this.legends.filter((item) => item.isFav);
+    },
+  },
 });
 
 app.mount("#app");
